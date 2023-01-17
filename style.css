@@ -9,21 +9,23 @@
 body{
     background-image: url(imagens/carro.jpg);
     background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-repeat: no-repeat;  
 }
 
 .cabecalho{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
     background-color: black;
-    color: white;
+    box-shadow: 0px 3px 10px gray;
 }
 
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
 .imagem-cabecalho{
     width: 200px;
     margin: -30px;
@@ -32,28 +34,24 @@ body{
 
 .menu-cabecalho{
     display: flex;
-    gap: 60px;
-    border-left: 2px solid white;
-    padding-left: 20px;
+    align-items: center;
+}
+
+.menu-cabecalho ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
 }
 
 .item-menu-cabecalho{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(255, 255, 255, 0.705);
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: underline;
-    
-}
-
-.item-menu-cabecalho:hover{
-    background-color: #FFC700;
-    color: black;
-    border-radius: 5px;
-    font-weight: bold;
-    text-shadow: none;
-    transition-duration: 0.3s;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
 }
 
 .botao-cabecalho{
@@ -73,6 +71,58 @@ body{
     color: white;
 }
 
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .botao-cabecalho{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .botao-cabecalho{
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .botao-cabecalho button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    #botao2{
+        display: flex;
+        justify-content:center;
+        padding: 1.5rem;
+    }
+}
 .conteudo{
     border-top: 0.5px solid white;
     margin-bottom: 45px;
@@ -100,16 +150,6 @@ body{
     font-size: 17px;
     color: black;
     margin-right: 80px;
-}
-
-.item-menu-cabecalho:hover{
-    background-color: #FFC700;
-    color: black;
-    border-radius: 5px;
-    font-weight: bold;
-    text-shadow: none;
-    transition-duration: 0.3s;
-    text-decoration: underline;
 }
 
 .conteudo-pricipal-escrito-botao{

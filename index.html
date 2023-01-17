@@ -10,16 +10,39 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img class="imagem-cabecalho" src="imagens/logo.png" alt="logo" >
-        <nav class="menu-cabecalho">
-            <a class="item-menu-cabecalho" href="">Home</a>
-            <a class="item-menu-cabecalho" href="">Serviços</a>
-            <a class="item-menu-cabecalho" href="">Agenda</a>
-            <a class="item-menu-cabecalho" href="contatos.html" target="_self">Contatos</a>
-            <a class="item-menu-cabecalho" href="https://www.instagram.com/cruzesteticcar.ofc/" target="_blank" rel="external">Instagram</a>
-            <a class="item-menu-cabecalho" href="">Ajuda</a>
-        </nav>
-        <input class="botao-cabecalho" type="button" value="Agendamento!">
+           <nav class="nav-bar">
+               <div class="logo"><img class="imagem-cabecalho" src="imagens/logo.png" alt="logo" ></div>
+                        >
+                <div class="menu-cabecalho">
+                    <ul>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="">Home</a></li>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="">Serviços</a></li>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="">Agenda</a></li>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="contatos.html" target="_self">Contatos</a></li>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="https://www.instagram.com/cruzesteticcar.ofc/" target="_blank" rel="external">Instagram</a></li>
+                        <li class="nav-item"><a class="item-menu-cabecalho" href="">Ajuda</a></li>
+                    </ul>
+                </div>
+                <div><input class="botao-cabecalho" type="button" value="Agendamento!"></div>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.svg" alt=""></button>
+                </div>
+                 
+           </nav>
+           <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="">Home</a></li>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="">Serviços</a></li>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="">Agenda</a></li>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="contatos.html" target="_self">Contatos</a></li>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="https://www.instagram.com/cruzesteticcar.ofc/" target="_blank" rel="external">Instagram</a></li>
+                <li class="nav-item"><a class="item-menu-cabecalho" href="">Ajuda</a></li>
+            </ul>
+
+            <div id="botao2"><input class="botao-cabecalho" type="button" value="Agendamento!"></div>
+
+           </div>
     </header>
     <main class="conteudo">
         <section class="conteudo-principal">
@@ -30,5 +53,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
